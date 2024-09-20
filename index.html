@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>House Rentals Agency</title>
+  </head>
+  <body>
+    <!-- first section -->
+    <section id="header" class="pb-32 mb-20">
+      <div class="container px-6 py-6 mx-auto">
+        <!-- nav container -->
+        <nav
+          class="flex flex-row items-center justify-between md:justify-normal md:space-x-44 lg:space-x-60 md:border-b md:-pb-3 border-b-gray-300"
+        >
+          <!-- logo -->
+          <img src="img/logo 1.png" alt="" />
+          <!-- menu -->
+          <div
+            class="hidden flex-row md:flex space-x-10 pt-14 items-center text-white"
+          >
+            <div class="hover:border-b-2 tracking-wider pb-6">
+              <a href="#home" class="hover:text-softPink">Home</a>
+            </div>
+            <div class="hover:border-b-2 tracking-wider pb-6">
+              <a href="#landlord" class="hover:text-softPink">Landlord</a>
+            </div>
+            <div class="hover:border-b-2 tracking-wider pb-6">
+              <a href="#tenants" class="hover:text-softPink">Tenants</a>
+            </div>
+            <div class="hover:border-b-2 tracking-wider pb-6">
+              <a href="#contact" class="hover:text-softPink">Contact Us</a>
+            </div>
+          </div>
+          <!-- menu btn -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block menu md:hidden focus:outline-none"
+            >
+              <span class="menu-top"></span>
+              <span class="menu-middle"></span>
+              <span class="menu-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- mobile menu -->
+        <div
+          id="menu"
+          class="hidden z-20 fixed md:hidden top-0 bottom-0 right-0 w-52 h-44 pb-3 py-1 pt-5 opacity-70 bg-black tracking-widest rounded-md"
+        >
+          <div class="flex pl-5 flex-col space-y-4 divide-y divide-gray-300">
+            <a href="#home" class="text-white hover:text-softPink">Home</a>
+            <a href="#landlord" class="text-white hover:text-softPink"
+              >Landlord</a
+            >
+            <a href="#tenants" class="text-white hover:text-softPink"
+              >Tenants</a
+            >
+            <a href="#contact" class="text-white hover:text-softPink"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <!-- text and google map on image -->
+        <div
+          class="pt-10 flex flex-col lg:flex-row items-center mx-auto space-y-10 lg:space-y-0 lg:space-x-10 text-center lg:text-start"
+        >
+          <!-- text on image -->
+          <div class="max-w-lg">
+            <h2
+              class="text-3xl lg:text-5xl capitalize text-white font-inter font-bold"
+            >
+              the most affortable place to stay in the san franciso bay area
+            </h2>
+          </div>
+          <!-- google map -->
+          <div class="flex flex-col items-center space-y-6">
+            <div class="shadow-shadowMap shadow-2xl">
+              <img src="img/google-map.jpg" alt="" class="rounded-lg" />
+            </div>
+            <div
+              class="flex flex-row mx-auto items-center bg-white py-3 px-6 rounded-lg"
+            >
+              <a
+                href="#"
+                class="flex flex-row items-center rounded-l-md space-x-5 p-3 md:p-4 border border-gray-300 bg-gray-100"
+              >
+                <h4 class="text-gray-500">All Type</h4>
+                <img src="img/down-arrow.png" class="hidden md:flex" alt="" />
+              </a>
+              <!-- neigbour -->
+              <a
+                href="#"
+                class="flex flex-row items-center space-x-5 p-3 md:p-4 border border-gray-300 bg-gray-100"
+              >
+                <h4 class="text-gray-500">Neighborhood</h4>
+                <img src="img/down-arrow.png" alt="" class="hidden md:flex" />
+              </a>
+              <!-- search icon -->
+              <a
+                href="#"
+                class="flex flex-row items-center rounded-r-md py-4 md:py-5 px-6 border border-gray-300 bg-softBlue"
+              >
+                <img src="img/serach-icon.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- second section -->
+    <section id="cost" class="mb-20 pb-14">
+      <div class="mx-auto lg:mx-4 px-6 space-y-8">
+        <h2
+          class="text-[#18191f] font-semibold font-inter text-center md:text-start text-3xl md:text-3xl capitalize"
+        >
+          <span class="border-b-2 border-b-softPink">Minimum living cost</span>
+          takes care of everything
+        </h2>
+        <div
+          class="w-full flex flex-col lg:flex-row items-center space-y-16 lg:space-y-0 lg:space-x-10"
+        >
+          <!-- image -->
+          <div class="shadow-2xl shadow-gray-600">
+            <img
+              src="img/pool-img.jpg"
+              class="rounded-tl-3xl rounded-br-3xl"
+              alt=""
+            />
+          </div>
+          <!-- content -->
+          <div
+            class="lg:w-2/3 items-center flex flex-col space-y-10 justify-center mx-auto"
+          >
+            <!-- first row container -->
+            <div
+              class="flex flex-col lg:flex-row space-y-10 lg:space-y-0 items-center text-center lg:text-start lg:space-x-12"
+            >
+              <!-- pay container -->
+              <div class="flex flex-col items-center lg:items-start space-y-6">
+                <div class="bg-white p-5 shadow-2xl rounded-xl">
+                  <img src="img/dollar-icon.png" alt="" />
+                </div>
+                <p class="max-w-xs font-inter text-xl lg:text-2xl capitalize">
+                  pay as little as possible!
+                </p>
+              </div>
+              <!-- enjoy container -->
+              <div class="flex flex-col items-center lg:items-start space-y-6">
+                <div class="bg-white p-5 shadow-2xl rounded-xl">
+                  <img src="img/house-icon.png" alt="" />
+                </div>
+                <p class="max-w-xs font-inter text-xl lg:text-2xl capitalize">
+                  enjoy wisdom of community!
+                </p>
+              </div>
+              <!-- care container -->
+              <div
+                class="flex flex-col items-center text-start lg:items-start space-y-6"
+              >
+                <div class="bg-white p-5 shadow-2xl rounded-xl">
+                  <img src="img/care-icon.png" alt="" />
+                </div>
+                <p
+                  class="lg:max-w-sm lg:text-start text-center  font-inter text-xl lg:text-2xl capitalize"
+                >
+                  let's somebody else take care of landlord!
+                </p>
+              </div>
+            </div>
+            <!-- second row container -->
+            <div
+              class="flex flex-col lg:flex-row space-y-10 lg:space-y-0 items-center text-center lg:text-start lg:-space-x-2"
+            >
+              <!-- peaceful container -->
+              <div class="flex flex-col items-center lg:items-start space-y-6">
+                <div class="bg-white p-5 shadow-2xl rounded-xl">
+                  <img src="img/peace-icon.png" alt="" />
+                </div>
+                <p class="max-w-xs font-inter text-xl lg:text-2xl capitalize">
+                  enjoy peaceful environment!
+                </p>
+              </div>
+              <!-- stay safe container -->
+              <div class="flex flex-col items-center lg:items-start space-y-6">
+                <div class="bg-white p-5 shadow-2xl rounded-xl">
+                  <img src="img/safe-icon.png" alt="" />
+                </div>
+                <p class="max-w-xs font-inter text-xl lg:text-2xl capitalize">
+                  stay safe save money!
+                </p>
+              </div>
+              <!-- pay container -->
+              <div
+                class="flex flex-col items-center text-start lg:items-start space-y-6"
+              >
+                <div class="bg-white p-5 shadow-2xl rounded-xl">
+                  <img src="img/use-icon.png" alt="" />
+                </div>
+                <p
+                  class="max-w-xs lg:text-start font-inter text-xl lg:text-2xl capitalize"
+                >
+                  pay for what you use!
+                </p>
+              </div>
+            </div>
+            <!-- end of container -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- properties section -->
+    <section id="properties" class="bg-[#e6e2e2]">
+      <div class="mx-auto px-6 lg:mx-8">
+        <div
+          class="flex flex-col md:flex-row space-y-10 md:space-y-0 items-center justify-between py-10"
+        >
+          <h2
+            class="text-[#18191f] font-semibold font-inter text-center text-3xl md:text-3xl capitalize"
+          >
+            <span class="border-b-2 border-b-softPink">list o</span>f properties
+          </h2>
+          <button
+            class="px-9 py-5 bg-softPink rounded-lg text-white font-light hover:bg-softBlue hover:translate-y-2 text-lg"
+          >
+            View All Property
+          </button>
+        </div>
+        <!-- properties -->
+        <div class="flex flex-col items-center space-y-10 pb-20">
+          <!-- first set of properties container -->
+          <div
+            class="flex flex-col md:flex-row justify-between items-center mb-10 space-y-10 md:space-y-0 md:space-x-10"
+          >
+            <!-- first property -->
+            <div class="flex flex-col items-center">
+              <img src="img/house-1.png" alt="" class="rounded-t-lg" />
+              <!-- text container -->
+              <div
+                class="bg-white rounded-b-xl w-full p-5 pb-0 border border-gray-300 shadow-2xl"
+              >
+                <h3 class="font-semibold max-w-xs text-xl capitalize mb-5">
+                  2578 folsom street, san francisco, CA, 94110
+                </h3>
+                <p class="text-[#818181]">Private Room</p>
+                <p
+                  class="text-softPink font-semibold tracking-wider text-xl mb-5"
+                >
+                  $1200/Month
+                </p>
+                <div class="flex flex-row border-t border-gray-300 pl-0">
+                  <!-- bed icon -->
+                  <div
+                    class="flex flex-row mx-auto text-center w-full items-center justify-between"
+                  >
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Bed-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- shower icon -->
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Shower-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- third icon -->
+                    <div
+                      class="flex space-x-3 mx-auto items-center p-4 justify-center text-center"
+                    >
+                      <img src="img/Size-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second property -->
+            <div class="flex flex-col items-center">
+              <img src="img/house-2.png" alt="" class="rounded-t-lg" />
+              <!-- text container -->
+              <div
+                class="bg-white rounded-b-xl w-full p-5 pb-0 border border-gray-300 shadow-2xl"
+              >
+                <h3 class="font-semibold max-w-xs text-xl capitalize mb-5">
+                  2578 folsom street, san francisco, CA, 94110
+                </h3>
+                <p class="text-[#818181]">Private Room</p>
+                <p
+                  class="text-softPink font-semibold tracking-wider text-xl mb-5"
+                >
+                  $1200/Month
+                </p>
+                <div class="flex flex-row border-t border-gray-300 pl-0">
+                  <!-- bed icon -->
+                  <div
+                    class="flex flex-row mx-auto text-center w-full items-center justify-between"
+                  >
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Bed-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- shower icon -->
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Shower-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- third icon -->
+                    <div
+                      class="flex space-x-3 mx-auto items-center p-4 justify-center text-center"
+                    >
+                      <img src="img/Size-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- third property -->
+            <div class="flex flex-col items-center">
+              <img src="img/house-3.png" alt="" class="rounded-t-lg" />
+              <!-- text container -->
+              <div
+                class="bg-white rounded-b-xl w-full p-5 pb-0 border border-gray-300 shadow-2xl"
+              >
+                <h3 class="font-semibold max-w-xs text-xl capitalize mb-5">
+                  2578 folsom street, san francisco, CA, 94110
+                </h3>
+                <p class="text-[#818181]">Private Room</p>
+                <p
+                  class="text-softPink font-semibold tracking-wider text-xl mb-5"
+                >
+                  $1200/Month
+                </p>
+                <div class="flex flex-row border-t border-gray-300 pl-0">
+                  <!-- bed icon -->
+                  <div
+                    class="flex flex-row mx-auto text-center w-full items-center justify-between"
+                  >
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Bed-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- shower icon -->
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Shower-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- third icon -->
+                    <div
+                      class="flex space-x-3 mx-auto items-center p-4 justify-center text-center"
+                    >
+                      <img src="img/Size-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second set of properties container -->
+          <div
+            class="flex flex-col md:flex-row justify-between items-center mb-10 space-y-10 md:space-y-0 md:space-x-10"
+          >
+            <!-- fourth property -->
+            <div class="flex flex-col items-center">
+              <img src="img/house-4.png" alt="" class="rounded-t-lg" />
+              <!-- text container -->
+              <div
+                class="bg-white rounded-b-xl w-full p-5 pb-0 border border-gray-300 shadow-2xl"
+              >
+                <h3 class="font-semibold max-w-xs text-xl capitalize mb-5">
+                  2578 folsom street, san francisco, CA, 94110
+                </h3>
+                <p class="text-[#818181]">Private Room</p>
+                <p
+                  class="text-softPink font-semibold tracking-wider text-xl mb-5"
+                >
+                  $1200/Month
+                </p>
+                <div class="flex flex-row border-t border-gray-300 pl-0">
+                  <!-- bed icon -->
+                  <div
+                    class="flex flex-row mx-auto text-center w-full items-center justify-between"
+                  >
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Bed-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- shower icon -->
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Shower-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- third icon -->
+                    <div
+                      class="flex space-x-3 mx-auto items-center p-4 justify-center text-center"
+                    >
+                      <img src="img/Size-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fifth property -->
+            <div class="flex flex-col items-center">
+              <img src="img/house-5.png" alt="" class="rounded-t-lg" />
+              <!-- text container -->
+              <div
+                class="bg-white rounded-b-xl w-full p-5 pb-0 border border-gray-300 shadow-2xl"
+              >
+                <h3 class="font-semibold max-w-xs text-xl capitalize mb-5">
+                  2578 folsom street, san francisco, CA, 94110
+                </h3>
+                <p class="text-[#818181]">Private Room</p>
+                <p
+                  class="text-softPink font-semibold tracking-wider text-xl mb-5"
+                >
+                  $1200/Month
+                </p>
+                <div class="flex flex-row border-t border-gray-300 pl-0">
+                  <!-- bed icon -->
+                  <div
+                    class="flex flex-row mx-auto text-center w-full items-center justify-between"
+                  >
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Bed-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- shower icon -->
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Shower-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- third icon -->
+                    <div
+                      class="flex space-x-3 mx-auto items-center p-4 justify-center text-center"
+                    >
+                      <img src="img/Size-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- six property -->
+            <div class="flex flex-col items-center">
+              <img src="img/house-6.png" alt="" class="rounded-t-lg" />
+              <!-- text container -->
+              <div
+                class="bg-white rounded-b-xl w-full p-5 pb-0 border border-gray-300 shadow-2xl"
+              >
+                <h3 class="font-semibold max-w-xs text-xl capitalize mb-5">
+                  2578 folsom street, san francisco, CA, 94110
+                </h3>
+                <p class="text-[#818181]">Private Room</p>
+                <p
+                  class="text-softPink font-semibold tracking-wider text-xl mb-5"
+                >
+                  $1200/Month
+                </p>
+                <div class="flex flex-row border-t border-gray-300 pl-0">
+                  <!-- bed icon -->
+                  <div
+                    class="flex flex-row mx-auto text-center w-full items-center justify-between"
+                  >
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Bed-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- shower icon -->
+                    <div
+                      class="flex space-x-3 items-center mx-auto border-r-2 p-4 justify-center text-center"
+                    >
+                      <img src="img/Shower-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                    <!-- third icon -->
+                    <div
+                      class="flex space-x-3 mx-auto items-center p-4 justify-center text-center"
+                    >
+                      <img src="img/Size-icon.png" alt="" />
+                      <p>4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of properties container -->
+        </div>
+        <!-- next and prev btn -->
+        <div class="flex flex-row py-8 items-center justify-center">
+          <div
+            class="border cursor-pointer px-5 py-5 bg-[#a7a6a6] rounded-l-lg"
+          >
+            <h4 class="text-[#686767]">First</h4>
+          </div>
+          <div class="border cursor-pointer px-3 py-5 bg-white">
+            <h4 class="text-softPink">1</h4>
+          </div>
+          <div class="border cursor-pointer px-3 py-5 bg-softPink">
+            <h4 class="text-white">2</h4>
+          </div>
+          <div class="border cursor-pointer px-4 py-5 bg-white">
+            <h4 class="text-softPink">3</h4>
+          </div>
+          <div class="border cursor-pointer px-5 py-5 bg-white rounded-r-lg">
+            <h4 class="text-softPink">Next</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- third section -->
+    <section id="flexible" class="py-16">
+      <div class="mx-auto px-6 lg:mx-8">
+        <div
+          class="flex flex-col lg:flex-row items-center space-y-10 lg:space-y-0 lg:space-x-14"
+        >
+          <!-- image grid container -->
+          <div class="lg:w-1/2 text-white grid gap-4 lg:grid-cols-2">
+            <!-- first grid image -->
+            <div class="relative">
+              <img src="img/flex-img-3.png" class="h-full w-full" alt="" />
+              <div
+                class="absolute text-center top-0 left-0 right-0 pt-6 p-2 px-4 w-full"
+              >
+                <h3 class="text-white capitalize font-semibold text-xl">
+                  flexible leases
+                </h3>
+              </div>
+            </div>
+            <!-- second grid image -->
+            <div class="relative">
+              <img src="img/flex-img-4.png" class="h-full w-full" alt="" />
+              <div
+                class="absolute text-center top-0 left-0 right-0 pt-6 p-2 px-4 w-full"
+              >
+                <h3
+                  class="text-white capitalize font-semibold text-xl tracking-wider"
+                >
+                  7-day happiness guaranted
+                </h3>
+              </div>
+            </div>
+            <!-- third grid image -->
+            <div class="relative">
+              <img src="img/flex-img-1.png" class="h-full w-full" alt="" />
+              <div
+                class="absolute text-center top-0 left-0 right-0 pt-6 p-2 px-4 w-full"
+              >
+                <h3
+                  class="text-white capitalize font-semibold text-xl tracking-wider"
+                >
+                  monthly house cleaning
+                </h3>
+              </div>
+            </div>
+            <!-- fourth grid image -->
+            <div class="relative">
+              <img src="img/flex-img-2.png" class="h-full w-full" alt="" />
+              <div
+                class="absolute text-center top-0 left-0 right-0 pt-6 p-2 px-4 w-full"
+              >
+                <h3
+                  class="text-white capitalize font-semibold text-xl tracking-wider"
+                >
+                  choose your own roomate
+                </h3>
+              </div>
+            </div>
+            <!-- end of grid -->
+          </div>
+          <!-- text container -->
+          <div
+            class="lg:w-1/2 flex flex-col items-center lg:items-start space-y-6"
+          >
+            <h2
+              class="max-w-lg font-bold font-sans text-4xl lg:text-5xl text-center lg:text-start"
+            >
+              Flexibility and options to suit your lifestyle.
+            </h2>
+            <p class="max-w-sm opacity-50 text-center lg:text-start pb-10">
+              You need it? We got it. We make finding your next home easy,
+              comfortable, and simple. From our happiness guarantee to our
+              selective roommate finder option. We provide you the flexibility
+              that you most desire.
+            </p>
+            <button
+              class="px-9 py-5 bg-softPink rounded-lg text-white font-light duration-150 hover:bg-softBlue hover:translate-y-2 text-lg"
+            >
+              Search Rooms
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new propeties section -->
+    <section id="new" class="py-16">
+      <div class="mx-auto lg:mx-6 px-6">
+        <h3 class="text-center capitalize text-2xl pb-8">
+          your property with us and be confident that your room will be filled
+          out!
+        </h3>
+        <!-- add new property container -->
+        <div
+          class="bg-[#efeded] shadow-2xl rounded-lg mx-auto text-center py-6"
+        >
+          <h3 class="text-softPink text-2xl capitalize">Add a new property</h3>
+          <!-- grid-container -->
+          <div class="p-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <!-- name container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">Address</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter Name"
+                class="border border-gray-400 bg-gray-200 capitalize w-full py-5 rounded-md pl-5 focus:outline-none"
+              />
+            </div>
+            <!-- address container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">Address</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter Address"
+                class="border border-gray-400 bg-gray-200 capitalize w-full py-5 rounded-md pl-5 focus:outline-none"
+              />
+            </div>
+            <!-- unit container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">Unit Number</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="Enter Unit"
+                class="border border-gray-400 bg-gray-200 capitalize w-full py-5 rounded-md px-5 focus:outline-none"
+              />
+            </div>
+            <!-- city container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">City</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <div
+                class="cursor-pointer flex flex-row items-center justify-between w-full border border-gray-400 bg-gray-200 py-5 rounded-md px-5"
+              >
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Select City"
+                  class="border-none bg-gray-200 w-full focus:outline-none capitalize"
+                />
+                <img src="img/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <!-- state container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">State</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <div
+                class="cursor-pointer flex flex-row items-center justify-between w-full border border-gray-400 bg-gray-200 py-5 rounded-md px-5"
+              >
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Select State"
+                  class="border-none bg-gray-200 w-full focus:outline-none capitalize"
+                />
+                <img src="img/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <!-- room type container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">Room Type</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <div
+                class="cursor-pointer flex flex-row items-center justify-between w-full border border-gray-400 bg-gray-200 py-5 rounded-md px-5"
+              >
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Select Room type"
+                  class="border-none bg-gray-200 w-full focus:outline-none capitalize"
+                />
+                <img src="img/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <!-- price container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">Price</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <div
+                class="cursor-pointer flex flex-row items-center justify-between w-full border border-gray-400 bg-gray-200 py-5 rounded-md px-5"
+              >
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="enter price"
+                  class="border-none bg-gray-200 w-full focus:outline-none capitalize"
+                />
+                <img src="img/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <!-- room type container -->
+            <div class="flex flex-col items-start space-y-2">
+              <div class="flex items-center space-x-1">
+                <h3 class="font-semibold">Room Type</h3>
+                <img
+                  class="w-3 mb-2"
+                  src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                  alt="star--v1"
+                />
+              </div>
+              <div
+                class="cursor-pointer flex flex-row items-center justify-between w-full border border-gray-400 bg-gray-200 py-5 rounded-md px-5"
+              >
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Select Room type"
+                  class="border-none bg-gray-200 w-full focus:outline-none capitalize"
+                />
+                <img src="img/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <!-- end of grid-container -->
+          </div>
+          <!-- description -->
+          <div class="flex flex-col items-start space-y-2 mx-10 mb-12">
+            <div class="flex items-center space-x-1">
+              <h3 class="font-semibold">Address</h3>
+              <img
+                class="w-3 mb-2"
+                src="https://img.icons8.com/material-sharp/24/f4511e/star--v1.png"
+                alt="star--v1"
+              />
+            </div>
+            <textarea
+              name="description"
+              id=""
+              placeholder="Enter description"
+              class="border border-gray-400 bg-gray-200 capitalize w-full py-5 rounded-md pl-5 focus:outline-none"
+              rows="4"
+            ></textarea>
+          </div>
+          <!-- upload -->
+          <div class="flex flex-col items-start space-y-2 mx-10 mb-12">
+            <h3 class="font-light">Upload Photos</h3>
+            <div
+              class="border-2 border-dashed border-softPink bg-gray-100 capitalize w-full py-10 rounded-md space-y-4"
+            >
+              <p class="font-semibold">
+                Drag your images here, or
+                <span class="text-softPink">browse</span>
+              </p>
+              <p class="opacity-50">Supported: JPG, JPEG, PNG</p>
+            </div>
+          </div>
+          <!-- button -->
+          <button
+            class="px-9 md:px-36 py-5 mb-10 bg-softPink rounded-lg text-white font-light duration-150 hover:bg-softBlue hover:translate-y-2 text-lg"
+          >
+            Search Rooms
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- property owner section -->
+    <section id="owner" class="my-10 mb-20">
+      <div class="flex bg-[#f7d5cb] flex-col lg:flex-row items-center justify-between">
+        <!-- testimony -->
+        <div class="lg:w-1/2 relative  p-10 mt-10">
+          <!-- absolute quote img -->
+          <img
+            src="img/quote.png"
+            alt=""
+            class="absolute  left-4 top-3 scale-125  opacity-40"
+          />
+          <p class="opacity-70 leading-10 mb-8 lg:ml-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
+            pellentesque est. Curabitur at odio sit amet libero vulputate
+            efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa,
+            faucibus id pretium ac, mattis eu velit. Done sed risus a lacus
+            fringilla finibus.
+          </p>
+          <div class="flex items-center space-x-4 lg:ml-10 mb-20">
+            <img src="img/Ellipse 4.png" alt="">
+            <div class="flex flex-col items-start space-y-1">
+              <p class="text-softPink font-semibold">
+                Harry Wilson
+              </p>
+              <p class="opacity-50">
+                Property Owner
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row items-center lg:ml-10  space-x-2">
+            <img src="img/Ellipse 1.png" alt="">
+            <img src="img/Ellipse 2.png" alt="">
+            <img src="img/Ellipse 3.png" alt="">
+          </div>
+        </div>
+        <!-- video image -->
+        <div class="lg:w-1/2 relative">
+          <img src="img/media-bg-cover.png" class="" alt="">
+          <div class="absolute text-center mx-auto items-center top-48 left-48
+           lg:top-64 lg:left-64 ">
+            <img src="img/play-icon.png" 
+             class="rounded-full bg-softPink p-8 cursor-pointer" 
+             alt="">
+            <!-- <div class="rounded-full bg-softPink"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container mx-auto px-6 my-32">
+      <div class="border-1 border-t border-softPink"></div>
+    </div>
+    <footer id="footer" class="mt-10 p-8 bg-[#d7cccc] ">
+      <div class="flex flex-col md:flex-row justify-between items-center
+       space-y-6 md:space-y-0 mx-auto pb-32">
+        <img src="img/logo 1.png" alt="">
+        <div class="flex flex-col space-y-10 items-center lg:items-start lg:pr-20">
+          <!-- loacation container -->
+          <div class="flex space-x-4 items-start">
+            <img src="img/location-icon.png" alt="">
+            <p class="opacity-50 text-center">
+              344 faulconer DR, Suite 4.Charlottesville, CA, 12345
+            </p>
+          </div>
+          <!-- phone and mail container -->
+          <div class="flex flex-col md:flex-row items-start  md:space-x-10
+          space-y-10 md:space-y-0">
+            <!-- phone container -->
+            <div class="flex space-x-3 items-center">
+              <img src="img/phone-icon.png" alt="">
+              <p class="opacity-50">
+                (123) 425-7890
+              </p>
+            </div>
+          <!-- mail container -->
+          <div class="flex space-x-3 items-center">
+            <img src="img/print-icon.png" alt="">
+            <p class="opacity-50">
+              (123) 425-7890
+            </p>
+          </div>
+          </div>
+          <!-- social media container -->
+          <div class="flex flex-row items-center justify-between space-x-8">
+           <a href="#"><img src="img/Facebook.png" alt=""></a> 
+           <a href="#"><img src="img/Twitter.png" alt=""></a>
+           <a href="#"><img src="img/LinkedIn.png" alt=""></a>
+           <a href="#"><img src="img/Youtube.png" alt=""></a>
+           <a href="#"><img src="img/Instagram.png" alt=""></a>
+           <a href="#"><img src="img/GooglePlus.png" alt=""></a>
+           <a href="#"><img src="img/Pinterest.png" alt=""></a>
+           <a href="#"><img src="img/RSS.png" alt=""></a> 
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-500 pb-4"></div>
+      <div class="flex flex-col md:flex-row items-center justify-between
+       space-y-6 md:space-y-0">
+        <!-- footer menu -->
+        <div class="flex flex-col lg:flex-row items-start space-y-6 
+         lg:space-y-0 lg:space-x-8 uppercase">
+          <a href="#" class="opacity-70">about us</a>
+          <a href="#" class="opacity-70">contact us</a>
+          <a href="#" class="opacity-70">help</a>
+          <a href="#" class="opacity-70">privacy policy</a>
+          <a href="#" class="opacity-70">disclaimer</a>
+        </div>
+        <!-- copyright -->
+        <p class="opacity-70 text-xl ">
+          &copy Micolexy. 2024. All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
